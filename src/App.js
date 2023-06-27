@@ -1,13 +1,18 @@
 import './App.css';
-import DropDownMenu from './components/DropDownMenu';
+import DropDownMenu from './components/DropDownMenu/DropDownMenu';
+import mockData from './mock/seasonResult.json';
+import LeagueTable from './components/leagueTable/LeagueTable';
 
-function App() {
+
+const App = () => {
+  console.log(mockData);
   return (
-    <div>
-    <h1>Select a Year</h1>
-    <DropDownMenu />
-  </div>
+    <div className="app-container">
+      <h1>Select a Year</h1>
+      <DropDownMenu />
+      <LeagueTable data={mockData} />
+    </div>
   );
-}
+};
 
 export default App;
