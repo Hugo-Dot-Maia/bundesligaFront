@@ -5,7 +5,6 @@ import LeagueTable from './components/leagueTable/LeagueTable';
 
 
 const App = () => {
-  console.log(mockData);
   return (
     <div className="app-container">
       <h1>Select a Year</h1>

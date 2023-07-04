@@ -13,3 +13,5 @@ export const years = [
     '2021', 
     '2022'
 ];
+
+export const baseUrl = 'https://localhost:7280/api/FootballMatch/';

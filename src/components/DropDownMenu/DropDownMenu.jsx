@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
 import { years } from '../../constants/consts';
 import './DropDown.css';
+import { getSeasonResult } from './service/DropDownService';
 
 const DropDownMenu = () => {
   const [selectedYear, setSelectedYear] = useState('');
 
-  const handleChange = (event) => {
-    setSelectedYear(event.target.value);
+  const handleChange = async (event) => {
+    const year = event.target.value;
+    setSelectedYear(year);
+
+    try {
+      const response = await getSeasonResult(year);
+      // Handle the response data
+      console.log(response);
+    } catch (error) {
+      // Handle any errors
+      console.error('Error:', error.message);
+    }
   };
 
   return (
@@ -19,7 +30,7 @@ const DropDownMenu = () => {
           </option>
         ))}
       </select>
-    </div> 
+    </div>
   );
 };
 
