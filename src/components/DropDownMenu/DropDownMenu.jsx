@@ -12,6 +12,7 @@ const DropDownMenu = () => {
   const handleChange = async (event) => {
     const year = event.target.value;
     setSelectedYear(year);
+    dispatch(updateSeasonResult([]));
 
     try {
       const response = await getSeasonResult(year);
