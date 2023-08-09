@@ -60,14 +60,17 @@ tr:hover {
 .green-color-info {
     color: #008000;
     margin-right: 5px;
+    margin-left: 5px;
 }
   
 .blue-color-info {
     color: #0000ff;
     margin-right: 5px;
+    margin-left: 5px;
 }
   
 .red-color-info {
     color: #ff0000;
     margin-right: 5px;
+    margin-left: 10px;
 }
