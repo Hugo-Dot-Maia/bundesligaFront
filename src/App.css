@@ -3,5 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Set the height of the container to the full viewport height */
+
+  /* Add the following styles for scrollable-container */
+  overflow-y: auto; /* This will add a vertical scrollbar if needed */
+
 }

@@ -1,6 +1,7 @@
 .dropdown-container {
     display: inline-block;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .dropdown-select {

@@ -1,9 +1,12 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
+import { Typography } from "@mui/material";
 import { Card, CardContent, CardMedia, Grid } from "@mui/material";
 
-const StatisticsCard = ( {team, dataStatus} ) => {
+
+const StatisticsCard = ( {team, dataStatus, title} ) => {
     const { teamName, teamIcon, wins, draws, losses, goalsFor, goalsAgainst, position } = team;
+
+    const isBest = (inputString) =>  inputString.toLowerCase().includes("best");
 
     return (
         <div>
@@ -12,11 +15,13 @@ const StatisticsCard = ( {team, dataStatus} ) => {
                     <CardMedia
                         sx={{ height: 140 }}
                         image={teamIcon}
-                        title={teamName}
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             {teamName}
+                        </Typography>
+                        <Typography gutterBottom variant="h7" component="div" color={isBest(title) ? "green": "red"}>
+                            {title}
                         </Typography>
                         <Grid container spacing={2}>
                             <Grid item xs={6}>
@@ -33,7 +38,7 @@ const StatisticsCard = ( {team, dataStatus} ) => {
                                     Losses: {losses}
                                 </Typography>
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid item xs={'auto'}>
                                 <Typography variant="body2" color="text.secondary">
                                     Goals For: {goalsFor}
                                 </Typography>
