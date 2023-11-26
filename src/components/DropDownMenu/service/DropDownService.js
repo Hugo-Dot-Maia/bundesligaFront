@@ -3,7 +3,12 @@ import { baseUrl } from '../../../constants/consts';
 
 export const getSeasonResult = async (year) => {
   try {
-    const response = await axios.get(`${baseUrl}CalculateSeasonResult/season/${year}`);
+    let response;
+    await axios
+      .get(`${baseUrl}CalculateSeasonResult/season/${year}`)
+      .then((res) => {
+        response = res;
+      });
 
     return response.data;
   } catch (error) {
