@@ -55,7 +55,6 @@ const StatisticsCard = ({ team, dataStatus, title }) => {
                 <Typography variant="body2" color="text.secondary">
                   Goals Against: {goalsAgainst}
                 </Typography>
-                {/* You can add more statistics here */}
               </Grid>
             </Grid>
           </CardContent>

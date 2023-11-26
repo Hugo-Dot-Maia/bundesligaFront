@@ -1,76 +1,75 @@
 table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
 }
-  
+
 th,
 td {
-    padding: 8px;
-    text-align: center; 
-}
-  
-th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-  
-td {
-    border-bottom: 1px solid #ddd;
-}
-  
-tr:hover {
-    background-color: #f5f5f5;
+  padding: 8px;
+  text-align: center;
 }
 
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
 
 .green-row {
-    background-color: #c9ffd9;
+  background-color: #c9ffd9;
 }
-  
+
 .green-row:hover {
-    background-color: #a5e6af;
+  background-color: #a5e6af;
 }
-  
+
 .blue-row {
-    background-color: #cceeff;
+  background-color: #cceeff;
 }
-  
+
 .blue-row:hover {
-    background-color: #aad6f7;
+  background-color: #aad6f7;
 }
-  
+
 .red-row {
-    background-color: #ffcccc;
+  background-color: #ffcccc;
 }
-  
+
 .red-row:hover {
-    background-color: #fba7a7;
+  background-color: #fba7a7;
 }
 
 .subtitle {
-    margin-top: 10px;
-    font-size: 14px;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .subtitle span {
-    margin-bottom: 5px; /* Add spacing between stacked elements */
+  margin-bottom: 5px; /* Add spacing between stacked elements */
 }
-  
+
 .green-color-info {
-    color: #008000;
-    margin-right: 5px;
-    margin-left: 5px;
+  color: #008000;
+  margin-right: 5px;
+  margin-left: 5px;
 }
-  
+
 .blue-color-info {
-    color: #0000ff;
-    margin-right: 5px;
-    margin-left: 5px;
+  color: #0000ff;
+  margin-right: 5px;
+  margin-left: 5px;
 }
-  
+
 .red-color-info {
-    color: #ff0000;
-    margin-right: 5px;
-    margin-left: 10px;
+  color: #ff0000;
+  margin-right: 5px;
+  margin-left: 10px;
 }

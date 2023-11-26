@@ -1,8 +1,8 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   seasonResult: [],
-}
+};
 
 export const seasonResultSlice = createSlice({
   name: 'seasonResult',
@@ -11,11 +11,10 @@ export const seasonResultSlice = createSlice({
     updateSeasonResult: (state, action) => {
       state.seasonResult = action.payload;
     },
-
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { updateSeasonResult } = seasonResultSlice.actions
+export const { updateSeasonResult } = seasonResultSlice.actions;
 
-export default seasonResultSlice.reducer
+export default seasonResultSlice.reducer;

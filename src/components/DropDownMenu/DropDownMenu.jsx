@@ -26,7 +26,11 @@ const DropDownMenu = () => {
 
   return (
     <div className="dropdown-container">
-      <select value={selectedYear} onChange={handleChange} className="dropdown-select">
+      <select
+        value={selectedYear}
+        onChange={handleChange}
+        className="dropdown-select"
+      >
         <option value="">Select a year</option>
         {years.map((year) => (
           <option key={year} value={year}>
